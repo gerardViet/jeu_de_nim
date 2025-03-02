@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jeu de Nim',
       theme: ThemeData(
-        // Fond de l'application en jaune (ton doux)
+        // Fond de l'application en jaune clair
         scaffoldBackgroundColor: Colors.yellow[100],
         // Thème global pour les ElevatedButton : fond gris et texte noir
         elevatedButtonTheme: ElevatedButtonThemeData(
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-/// La page de jeu gère la partie de Nim.
+/// La page de jeu gère la partie de Nim
 class GamePage extends StatefulWidget {
   final String player1;
   final String player2;
@@ -134,7 +134,7 @@ class _GamePageState extends State<GamePage> {
     setState(() {
       _remainingMatches = 20;
       _currentPlayerIndex = 0;
-      _gameStatus = "C'est le tour de ${_players[_currentPlayerIndex]}";
+      _gameStatus = "C'est au tour de ${_players[_currentPlayerIndex]}";
     });
   }
 

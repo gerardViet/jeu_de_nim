@@ -30,7 +30,7 @@ Le jeu de Nim est très simple :
 1. **Clonez le repository** :
 
    ```bash
-   git clone https://github.com/votre_nom_utilisateur/jeu_de_nim.git
+   git clone https://github.com/gerardViet/jeu_de_nim.git
 
 2. **Accédez au dossier du projet** :
 

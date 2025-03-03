@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,6 +8,8 @@ void main() {
 
 /// L'application racine.
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,6 +32,8 @@ class MyApp extends StatelessWidget {
 
 /// La page d'accueil permet aux deux joueurs de saisir leur pseudo.
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -96,7 +102,7 @@ class GamePage extends StatefulWidget {
   final String player1;
   final String player2;
 
-  GamePage({required this.player1, required this.player2});
+  const GamePage({super.key, required this.player1, required this.player2});
 
   @override
   _GamePageState createState() => _GamePageState();
